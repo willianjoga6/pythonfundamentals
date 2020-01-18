@@ -43,10 +43,18 @@
 # print(usuario)
 
 #função
-nome = input('Digite seu nome: ')
-sobrenome = input('Digite o seu sobrenome: ')
-#Usar f e {}
-print(f'O nome é {nome} e o sobrenome é {sobrenome}')
+# nome = input('Digite seu nome: ')
+# sobrenome = input('Digite o seu sobrenome: ')
+# #Usar f e {}
+# print(f'O nome é {nome} e o sobrenome é {sobrenome}')
+
+#para acessar um metodo se usa o .(ponto)
+
+# palavra = 'nome'
+# print(palavra.upper())
+# palavra.re
+
+
 
 
 
