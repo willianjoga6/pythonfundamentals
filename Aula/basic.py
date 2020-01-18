@@ -31,7 +31,7 @@
 
 #Entrada de dados
 #input soh recebe string
-usuario = input('DIGITE SEU NOME: ')
+# usuario = input('DIGITE SEU NOME: ')
 #
 #Para converter input para inteiro, usa int(imput(''))
 #Para converter input para string, usa str(imput(''))
@@ -40,7 +40,13 @@ usuario = input('DIGITE SEU NOME: ')
 
 
 #Saida de Dados
-print(usuario)
+# print(usuario)
+
+#função
+nome = input('Digite seu nome: ')
+sobrenome = input('Digite o seu sobrenome: ')
+#Usar f e {}
+print(f'O nome é {nome} e o sobrenome é {sobrenome}')
 
 
 
