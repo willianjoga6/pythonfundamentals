@@ -29,8 +29,14 @@
 #
 #
 
-#Entrada de dados]
+#Entrada de dados
+#input soh recebe string
 usuario = input('DIGITE SEU NOME: ')
+#
+#Para converter input para inteiro, usa int(imput(''))
+#Para converter input para string, usa str(imput(''))
+#Para converter input para boleano, usa bool(imput(''))
+#Para converter input para float, usa float(imput(''))
 
 
 #Saida de Dados
