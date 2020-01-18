@@ -54,10 +54,15 @@
 # print(palavra.upper())
 # palavra.re
 
+# #Comparação
 
+# var1 = 10
+# var2 = 50
 
+# print(var1 == var2)
 
+#Lista sempre usa [] e as colunas começam contar no zero
 
-
-
+lista = ['abacaxi', 503, 30.3, 'cachorro']
+print(lista[1])
 
