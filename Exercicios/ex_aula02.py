@@ -31,11 +31,11 @@ dado =  {
 # 2- Nome dos estados e sua população em milhoes
 # 3- Nome dos estados e quantidade de municipios
 
-for i in dado['estado'].keys():
-    print(f"Nome dos Estados: {dado['estado'][i]['nome']}")
-print('=========================')
-for i in dado['estado'].keys():
-    print(f"Nome dos Estados: {dado['estado'][i]['nome']}", f"População: {dado['estado'][i]['população']}",'Milhões')
-print('=========================')
-for i in dado['estado'].keys():
-    print(f"Nome dos Estados: {dado['estado'][i]['nome']}", f"População: {dado['estado'][i]['municipio']}")
+# for i in dado['estado'].keys():
+#     print(f"Nome dos Estados: {dado['estado'][i]['nome']}")
+# print('\n=========================\n')
+# for i in dado['estado'].keys():
+#     print(f"Nome dos Estados: {dado['estado'][i]['nome']}", f"População: {dado['estado'][i]['população']}",'Milhões')
+# print('\n=========================\n')
+# for i in dado['estado'].keys():
+#     print(f"Nome dos Estados: {dado['estado'][i]['nome']}", f"População: {dado['estado'][i]['municipio']}")
