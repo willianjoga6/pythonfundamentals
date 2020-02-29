@@ -1,19 +1,33 @@
 from unittest import TestCase, main
 
-def somar(x, y):
-    return x + y
+def validar_par(num: int) -> bool:
+    if isinstance(num,int):
+        return True if num % 2 == 0 else False
+    elif isisnstance(num, str):
+        if num.isnumeric():
+            return True if int(num) % 2 == 0 else False
+        else:
+            return None
 
-def subtrair(x, y):
-    return x - y
 
-class Teste(TestCase):
-    def test_soma(self):
-        self.assertEqual(somar(5,5),10)
-        self.assertLess(somar(5,5),11)
 
-    def test_sub(self):
-        self.assertEqual(subtrair(5,5),0)
-        self.assertLessEqual(subtrair(15,5),10)
+
+# def somar(x, y):
+#     return x + y
+
+# def subtrair(x, y):
+#     return x - y
+
+# class Teste(TestCase):
+#     def test_soma(self):
+#         self.assertEqual(somar(5,5),10)
+#         self.assertLess(somar(5,5),11)
+
+#     def test_sub(self):
+#         self.assertEqual(subtrair(5,5),0)
+#         self.assertLessEqual(subtrair(15,5),10)
+
+    
 
 if __name__ == "__main__":
     main()
