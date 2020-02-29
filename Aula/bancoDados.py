@@ -26,7 +26,7 @@ from pymongo import MongoClient
 client = MongoClient('localhost')
 db = client['dexterops']
 
-def iserir_dados():
+def inserir_dados():
     try:
         db.fila.insert({"_id":1, "empresa":"4linux","cursos":[{"nome":"python fundamentals",
                                                                 "carga horaria":40},
@@ -35,4 +35,28 @@ def iserir_dados():
     except Exception as e:
         print('Erro:{}'.format(e))
 
-iserir_dados()
+# inserir_dados()
+
+def buscar_dados():
+    for r in db.fila.find():
+        print('empresa: {}'.format(r['empresa']))
+        for c in r['cursos']:
+            print(20*'=')
+            print('nome: {} \n carga horaria: {}'. format(c['nome'], c['carga horaria']))
+
+# buscar_dados()
+
+# def adicionar_sub():
+#     db.fila.update({"_id":1}, {"$addToSet":{'instrutores':{'nome':'Mariana',
+#                                                             'email':'teste@teste.com.br'}}})
+# adicionar_sub()
+
+# def update_sub():
+#     db.fila.update({"_id": 1, "instrutores.nome": "Mariana"},
+#                    {"$set": {"instrutores.$.nome": "Marcia"}})
+# update_sub()
+
+# def update_email():
+#     db.fila.update({"_id": 1, "instrutores.email": "teste@teste.com.br"},
+#                    {"$set": {"instrutores.$.email": "teste2@teste2.com.br"}})
+# update_email()
